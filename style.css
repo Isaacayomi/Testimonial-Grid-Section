@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap');
+
+:root{
+    --testimonial-1:hsl(263, 55%, 52%);
+    --testimonial-2:hsl(217, 19%, 35%);
+    --testimonial-3:hsl(0, 0%, 100%);
+    --testimonial-4:hsl(219, 29%, 14%);
+    --testimonial-5:hsl(0, 0%, 100%); 
+    --bg-color:hsl(210, 46%, 95%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    font-size:13px;
+    background-color:var(--bg-color);
+}
+
+.container{
+    padding:2rem;
+    display:grid;
+    place-content: center;
+    min-height:100vh;
+    margin:auto;
+}
+
+.testimonials{
+    margin:0.7rem;
+    box-shadow: 0px 15px 20px #D3DAE2;
+}
+
+.testimonial-1{
+    background-color: hsl(263, 55%, 52%);
+    background-image:url(/images/bg-pattern-quotation.svg);
+    background-repeat:no-repeat;
+    background-position: right 8vw top;
+    padding-block:1.5rem;
+    padding-inline:2.2rem;
+    border-radius:0.5rem;
+}
+
+.testimonial-1 img{
+    border:3px solid hsl(268, 41%, 62%);
+}
+
+.profile-img{
+    width:40px;
+    height:auto;
+}
+
+img{
+    display:block;
+    border-radius:100%;   
+    width:100%;
+    height:auto;
+}
+
+.profile{
+    display:flex;
+    align-items: center;
+    gap:1.2rem;
+}
+
+.name p:first-child{
+    color:var(--bg-color);
+    margin-bottom:0.1rem;
+    font-size:1rem;
+}
+
+.name p:last-child{
+    color:hsla(210, 46%, 95%, 50%)
+}
+
+h1{
+    margin-block:1rem;
+    color:var(--bg-color);
+}
+
+.review-paragraph{
+    color:hsla(210, 46%, 95%, 70%);
+    margin-top:1.3rem;
+    padding-bottom:0.5rem;
+    font-size:1rem;
+    line-height:1.45rem;
+}
+
+.testimonial-2{
+    background-color: var(--testimonial-2);
+    padding-block:1.5rem;
+    padding-inline:2.2rem;
+    border-radius:0.5rem;
+}
+
+.testimonial-3{
+    background-color: var(--testimonial-3);
+    padding-block:1.5rem;
+    padding-inline:2.2rem;
+    border-radius:0.5rem;
+    color:var(--testimonial-2);
+}
+
+.testimonial-3 .name p:first-child{
+    color:var(--testimonial-2);
+    margin-bottom:0.1rem;
+    font-size:1rem;
+}
+
+.testimonial-3 .name p:last-child{
+    color:hsla(217, 19%, 35%, 50%);
+}
+
+.testimonial-3 h1{
+    color:var(--testimonial-2);
+}
+
+.testimonial-3 .review-paragraph{
+    color:hsla(217, 19%, 35%, 70%);
+}
+
+.testimonial-4{
+    background-color: var(--testimonial-4);
+    padding-block:1.5rem;
+    padding-inline:2.2rem;
+    border-radius:0.5rem;
+    color:var(--testimonial-2);
+}
+
+.testimonial-4 img{
+    border:3px solid var(--testimonial-1);
+}
+
+.testimonial-5{
+    background-color: var(--testimonial-5);
+    padding-block:1.5rem;
+    padding-inline:2.2rem;
+    border-radius:0.5rem;
+    color:var(--testimonial-2);
+}
+
+.testimonial-5 .name p:first-child{
+    color:var(--testimonial-2);
+    margin-bottom:0.1rem;
+    font-size:1rem;
+}
+
+.testimonial-5 .name p:last-child{
+    color:hsla(217, 19%, 35%, 50%);
+}
+
+.testimonial-5 h1{
+    color:var(--testimonial-2);
+}
+
+.testimonial-5 .review-paragraph{
+    color:hsla(217, 19%, 35%, 70%);
+    font-size:16px;
+}
+
+@media screen and (min-width:1000px) {
+      .container{
+        min-height:100px;
+        display:grid;
+        place-content:center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        grid-template-areas: 
+        'Daniel-card Daniel-card Jonathan-card Kira-card'
+        'Harmon-card Patrick-card Patrick-card Kira-card';
+    }
+
+    .testimonial-1{
+        grid-area:Daniel-card;
+    }
+
+    .testimonial-2{
+        grid-area:Jonathan-card;
+    }
+
+    .testimonial-3{
+        grid-area:Harmon-card;
+    }
+
+    .testimonial-4{
+        grid-area:Patrick-card;
+    }
+
+    .testimonial-5{
+        grid-area:Kira-card;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer { 
+    font-size: 11px; 
+    margin:auto;
+    text-align: center; 
+}
+
+.footer a { 
+    color: hsl(228, 45%, 44%);
+}
