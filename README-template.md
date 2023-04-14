@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Prime-xyz/Testimonial-Grid-Section]()
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [https://prime-testimonial-grid-section.vercel.app/]()
 
 ## My process
 
